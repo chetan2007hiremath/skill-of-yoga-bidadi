@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>AIEMS Hostel Portal</title>
+
+    <!-- Your CSS file -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    <header>
+
+        <div class="top-bar">
+
+            <div class="logo-area">
+                <h1>AIEMS</h1>
+                <span>Hostel Portal</span>
+            </div>
+
+            <button class="menu-button" type="button">
+                ☰
+            </button>
+
+        </div>
+
+
+        <!-- Navigation -->
+
+        <nav>
+
+            <a href="#home">Home</a>
+
+            <a href="#notices">Notices</a>
+
+            <a href="#complaints">Complaints</a>
+
+            <a href="#mess">Mess</a>
+
+            <a href="#rooms">Rooms</a>
+
+            <a href="#rules">Rules</a>
+
+            <a href="#emergency">Emergency</a>
+
+            <a href="#contact">Contact</a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- =========================
+         MAIN
+    ========================== -->
+
+    <main>
+
+
+        <!-- =========================
+             HOME
+        ========================== -->
+
+        <section id="home" class="hero">
+
+            <div class="hero-content">
+
+                <p class="small-title">
+                    AMRUTA INSTITUTE OF ENGINEERING
+                    AND MANAGEMENT SCIENCES
+                </p>
+
+                <h2>
+                    AIEMS Hostel Portal
+                </h2>
+
+                <p>
+                    One place for hostel information,
+                    complaints, notices and student services.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#complaints" class="primary-button">
+                        Submit Complaint
+                    </a>
+
+                    <a href="#notices" class="secondary-button">
+                        View Notices
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             STUDENT DASHBOARD
+        ========================== -->
+
+        <section class="dashboard-section">
+
+            <h2>Student Dashboard</h2>
+
+            <p class="section-description">
+                Quick access to your hostel services.
+            </p>
+
+
+            <div class="dashboard-grid">
+
+                <div class="dashboard-card">
+
+                    <span class="card-icon">📝</span>
+
+                    <h3>My Complaints</h3>
+
+                    <p>
+                        Submit and track your hostel complaints.
+                    </p>
+
+                    <a href="#complaints">
+                        Open →
+                    </a>
+
+                </div>
+
+
+                <div class="dashboard-card">
+
+                    <span class="card-icon">📢</span>
+
+                    <h3>Hostel Notices</h3>
+
+                    <p>
+                        View important hostel announcements.
+                    </p>
+
+                    <a href="#notices">
+                        View →
+                    </a>
+
+                </div>
+
+
+                <div class="dashboard-card">
+
+                    <span class="card-icon">🍛</span>
+
+                    <h3>Mess</h3>
+
+                    <p>
+                        Check today's mess information.
+                    </p>
+
+                    <a href="#mess">
+                        View →
+                    </a>
+
+                </div>
+
+
+                <div class="dashboard-card">
+
+                    <span class="card-icon">🛏️</span>
+
+                    <h3>Room</h3>
+
+                    <p>
+                        View your room information.
+                    </p>
+
+                    <a href="#rooms">
+                        View →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             NOTICES
+        ========================== -->
+
+        <section id="notices" class="content-section">
+
+            <h2>Hostel Notices</h2>
+
+            <p class="section-description">
+                Important announcements for hostel students.
+            </p>
+
+
+            <div class="notice-card">
+
+                <span class="notice-label">
+                    NOTICE
+                </span>
+
+                <h3>
+                    Hostel announcements will appear here
+                </h3>
+
+                <p>
+                    The hostel administration can publish
+                    important notices for students.
+                </p>
+
+                <small>
+                    Date: To be updated
+                </small>
+
+            </div>
+
+
+            <div class="notice-card">
+
+                <span class="notice-label">
+                    INFORMATION
+                </span>
+
+                <h3>
+                    Check the portal regularly
+                </h3>
+
+                <p>
+                    Students can use this section to stay
+                    updated with hostel information.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             COMPLAINTS
+        ========================== -->
+
+        <section id="complaints" class="content-section">
+
+            <h2>Hostel Complaints</h2>
+
+            <p class="section-description">
+                Report a hostel problem to the administration.
+            </p>
+
+
+            <form id="complaintForm">
+
+
+                <!-- Student Name -->
+
+                <div class="form-group">
+
+                    <label for="studentName">
+                        Student Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="studentName"
+                        name="studentName"
+                        placeholder="Enter your name"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- Room Number -->
+
+                <div class="form-group">
+
+                    <label for="roomNumber">
+                        Room Number
+                    </label>
+
+                    <input
+                        type="text"
+                        id="roomNumber"
+                        name="roomNumber"
+                        placeholder="Enter room number"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- Complaint Category -->
+
+                <div class="form-group">
+
+                    <label for="category">
+                        Complaint Category
+                    </label>
+
+                    <select
+                        id="category"
+                        name="category"
+                        required
+                    >
+
+                        <option value="">
+                            Select category
+                        </option>
+
+                        <option value="Electricity">
+                            Electricity
+                        </option>
+
+                        <option value="Water">
+                            Water
+                        </option>
+
+                        <option value="Wi-Fi">
+                            Wi-Fi
+                        </option>
+
+                        <option value="Cleaning">
+                            Cleaning
+                        </option>
+
+                        <option value="Food">
+                            Food / Mess
+                        </option>
+
+                        <option value="Room">
+                            Room
+                        </option>
+
+                        <option value="Other">
+                            Other
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- Complaint -->
+
+                <div class="form-group">
+
+                    <label for="complaint">
+                        Describe Your Problem
+                    </label>
+
+                    <textarea
+                        id="complaint"
+                        name="complaint"
+                        rows="5"
+                        placeholder="Describe your problem..."
+                        required
+                    ></textarea>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="submit-button"
+                >
+                    Submit Complaint
+                </button>
+
+            </form>
+
+
+            <!-- Complaint Status -->
+
+            <div class="complaint-status">
+
+                <h3>
+                    My Complaint Status
+                </h3>
+
+                <div id="complaintList">
+
+                    <p>
+                        No complaints submitted yet.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             MESS
+        ========================== -->
+
+        <section id="mess" class="content-section">
+
+            <h2>Mess Information</h2>
+
+            <p class="section-description">
+                Hostel mess information can be displayed here.
+            </p>
+
+
+            <div class="mess-grid">
+
+
+                <div class="mess-card">
+
+                    <h3>Breakfast</h3>
+
+                    <p>
+                        Menu to be updated
+                    </p>
+
+                </div>
+
+
+                <div class="mess-card">
+
+                    <h3>Lunch</h3>
+
+                    <p>
+                        Menu to be updated
+                    </p>
+
+                </div>
+
+
+                <div class="mess-card">
+
+                    <h3>Snacks</h3>
+
+                    <p>
+                        Menu to be updated
+                    </p>
+
+                </div>
+
+
+                <div class="mess-card">
+
+                    <h3>Dinner</h3>
+
+                    <p>
+                        Menu to be updated
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             ROOMS
+        ========================== -->
+
+        <section id="rooms" class="content-section">
+
+            <h2>Room Information</h2>
+
+            <p class="section-description">
+                Student room information can be managed here.
+            </p>
+
+
+            <div class="room-card">
+
+                <h3>
+                    My Hostel Room
+                </h3>
+
+                <div class="room-details">
+
+                    <p>
+                        <strong>Student:</strong>
+                        Not logged in
+                    </p>
+
+                    <p>
+                        <strong>Room:</strong>
+                        Not assigned
+                    </p>
+
+                    <p>
+                        <strong>Hostel:</strong>
+                        Not selected
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             RULES
+        ========================== -->
+
+        <section id="rules" class="content-section">
+
+            <h2>Hostel Rules</h2>
+
+            <p class="section-description">
+                Important hostel guidelines.
+            </p>
+
+
+            <div class="rules-card">
+
+                <ol>
+
+                    <li>
+                        Maintain cleanliness in hostel rooms
+                        and common areas.
+                    </li>
+
+                    <li>
+                        Follow hostel timings and
+                        administration instructions.
+                    </li>
+
+                    <li>
+                        Respect other students and hostel staff.
+                    </li>
+
+                    <li>
+                        Report maintenance problems through
+                        the complaint system.
+                    </li>
+
+                    <li>
+                        Follow the official hostel rules
+                        provided by the institution.
+                    </li>
+
+                </ol>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             EMERGENCY
+        ========================== -->
+
+        <section id="emergency" class="content-section emergency-section">
+
+            <h2>Emergency Help</h2>
+
+            <p class="section-description">
+                Important contacts can be added here after
+                confirmation from hostel administration.
+            </p>
+
+
+            <div class="emergency-grid">
+
+                <div class="emergency-card">
+
+                    <span>🚨</span>
+
+                    <h3>
+                        Hostel Warden
+                    </h3>
+
+                    <p>
+                        Contact information to be added
+                    </p>
+
+                </div>
+
+
+                <div class="emergency-card">
+
+                    <span>🛡️</span>
+
+                    <h3>
+                        Security
+                    </h3>
+
+                    <p>
+                        Contact information to be added
+                    </p>
+
+                </div>
+
+
+                <div class="emergency-card">
+
+                    <span>🏥</span>
+
+                    <h3>
+                        Medical Help
+                    </h3>
+
+                    <p>
+                        Contact information to be added
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CONTACT
+        ========================== -->
+
+        <section id="contact" class="content-section">
+
+            <h2>Hostel Contact</h2>
+
+            <p class="section-description">
+                Hostel contact information.
+            </p>
+
+
+            <div class="contact-card">
+
+                <h3>
+                    AIEMS Hostel
+                </h3>
+
+                <p>
+                    Amruta Institute of Engineering
+                    and Management Sciences
+                </p>
+
+                <p>
+                    Bidadi, Karnataka
+                </p>
+
+                <p>
+                    Official contact details can be
+                    added after confirmation.
+                </p>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <h3>
+            AIEMS Hostel Portal
+        </h3>
+
+        <p>
+            Hostel information and student services
+        </p>
+
+        <p>
+            © 2026
+        </p>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+<!-- =========================
+     GYM
+========================= -->
+
+<section id="gym" class="content-section">
+
+    <h2>Hostel Gym</h2>
+
+    <p class="section-description">
+        Gym information and maintenance services for hostel students.
+    </p>
+
+
+    <!-- Gym Information -->
+
+    <div class="gym-grid">
+
+        <div class="gym-card">
+            <span class="gym-icon">🏋️</span>
+
+            <h3>Gym Timings</h3>
+
+            <p>
+                Timings to be updated by hostel administration.
+            </p>
+        </div>
+
+
+        <div class="gym-card">
+            <span class="gym-icon">📋</span>
+
+            <h3>Gym Rules</h3>
+
+            <p>
+                Follow safety and cleanliness rules while
+                using gym equipment.
+            </p>
+        </div>
+
+
+        <div class="gym-card">
+            <span class="gym-icon">🧹</span>
+
+            <h3>Cleanliness</h3>
+
+            <p>
+                Report cleanliness or maintenance problems.
+            </p>
+        </div>
+
+    </div>
+
+
+    <!-- Gym Problem -->
+
+    <div class="gym-problem">
+
+        <h3>Report a Gym Problem</h3>
+
+        <p>
+            Found a damaged machine or another problem?
+            Report it to the hostel administration.
+        </p>
+
+
+        <form id="gymProblemForm">
+
+            <div class="form-group">
+
+                <label for="gymStudentName">
+                    Student Name
+                </label>
+
+                <input
+                    type="text"
+                    id="gymStudentName"
+                    placeholder="Enter your name"
+                    required
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="gymProblemType">
+                    Problem Type
+                </label>
+
+                <select
+                    id="gymProblemType"
+                    required
+                >
+
+                    <option value="">
+                        Select problem
+                    </option>
+
+                    <option value="Equipment">
+                        Gym Equipment
+                    </option>
+
+                    <option value="Electricity">
+                        Fan / Light / Electricity
+                    </option>
+
+                    <option value="Cleanliness">
+                        Cleanliness
+                    </option>
+
+                    <option value="Safety">
+                        Safety Problem
+                    </option>
+
+                    <option value="Other">
+                        Other
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="gymProblem">
+                    Describe the Problem
+                </label>
+
+                <textarea
+                    id="gymProblem"
+                    rows="4"
+                    placeholder="Example: Treadmill is not working..."
+                    required
+                ></textarea>
+
+            </div>
+
+
+            <button
+                type="submit"
+                class="submit-button"
+            >
+                Report Gym Problem
+            </button>
+
+        </form>
+
+
+        <div id="gymProblemList">
+
+            <p>
+                No gym problems reported.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
